@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Web Developer | Portfolio</title>
+  <meta name="description" content="I create modern, fast and responsive websites. Professional web development services – landing pages, business sites & custom portfolios." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════ NAVBAR ══════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>Dev<span class="logo-accent">/</span><span class="logo-bracket">&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"   class="nav-link">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/923101107147" target="_blank" class="nav-cta">
+        <i class="fab fa-whatsapp"></i> Hire Me
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> Available for new projects
+        </div>
+        <h1 class="hero-title">
+          Professional<br />
+          <span class="gradient-text">Web Developer</span>
+        </h1>
+        <p class="hero-subtitle">
+          I create modern, fast and responsive websites<br class="desktop-br" />
+          that help your business grow online.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/923101107147" target="_blank" class="btn btn-primary" id="hero-order-btn">
+            <i class="fab fa-whatsapp"></i> Order Now
+          </a>
+          <a href="#portfolio" class="btn btn-ghost">
+            View My Work <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">50+</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="code-filename">portfolio.js</span>
+          </div>
+          <pre class="code-body"><span class="c-key">const</span> <span class="c-var">developer</span> <span class="c-op">=</span> <span class="c-brace">{</span>
+  <span class="c-prop">name</span><span class="c-op">:</span> <span class="c-str">"Mudasir Hussain"</span><span class="c-op">,</span>
+  <span class="c-prop">skills</span><span class="c-op">:</span> <span class="c-brace">[</span>
+    <span class="c-str">"HTML"</span><span class="c-op">,</span> <span class="c-str">"CSS"</span><span class="c-op">,</span>
+    <span class="c-str">"JavaScript"</span>
+  <span class="c-brace">],</span>
+  <span class="c-prop">available</span><span class="c-op">:</span> <span class="c-bool">true</span>
+<span class="c-brace">};</span></pre>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll Down</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ══════════════════ SERVICES ══════════════════ -->
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What I Offer</p>
+        <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+        <p class="section-desc">Everything you need to establish a powerful online presence.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" id="service-web">
+          <div class="service-icon-wrap">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Website Development</h3>
+          <p>Full-featured, high-performance websites built with clean code, fast load times and modern tech stack.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> Custom design</li>
+            <li><i class="fas fa-check-circle"></i> Mobile responsive</li>
+            <li><i class="fas fa-check-circle"></i> SEO friendly</li>
+          </ul>
+          <a href="https://wa.me/923101107147" target="_blank" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card featured-service" id="service-landing">
+          <div class="featured-ribbon">Most Requested</div>
+          <div class="service-icon-wrap">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>Landing Page Design</h3>
+          <p>Eye-catching landing pages designed to convert visitors into paying customers with powerful UI/UX.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> High conversion design</li>
+            <li><i class="fas fa-check-circle"></i> Fast & optimized</li>
+            <li><i class="fas fa-check-circle"></i> Call-to-action ready</li>
+          </ul>
+          <a href="https://wa.me/923101107147" target="_blank" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" id="service-portfolio">
+          <div class="service-icon-wrap">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <h3>Portfolio Websites</h3>
+          <p>Showcased personal portfolio websites that highlight your skills, projects and personality uniquely.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> Unique personality</li>
+            <li><i class="fas fa-check-circle"></i> Smooth animations</li>
+            <li><i class="fas fa-check-circle"></i> Professional look</li>
+          </ul>
+          <a href="https://wa.me/923101107147" target="_blank" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ PORTFOLIO ══════════════════ -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Recent Work</p>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">A selection of my finest web development projects.</p>
+      </div>
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card" id="proj-1">
+          <div class="portfolio-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1600&auto=format&fit=crop"
+              alt="Modern E-commerce Website Project"
+              loading="lazy"
+            />
+            <div class="portfolio-overlay">
+              <div class="overlay-content">
+                <span class="proj-type">Web App</span>
+                <h3>Modern E-Commerce</h3>
+                <p>Full-featured shopping experience with cart & payments.</p>
+                <a href="https://wa.me/923101107147" target="_blank" class="proj-btn">
+                  <i class="fas fa-comments"></i> Order Similar
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="proj-tag">E-Commerce</span>
+            <h4>Online Store</h4>
+          </div>
+        </div>
+
+        <div class="portfolio-card" id="proj-2">
+          <div class="portfolio-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1600&auto=format&fit=crop"
+              alt="Corporate Business Website Project"
+              loading="lazy"
+            />
+            <div class="portfolio-overlay">
+              <div class="overlay-content">
+                <span class="proj-type">Business</span>
+                <h3>Corporate Agency</h3>
+                <p>Professional agency site with smooth animations & CTA.</p>
+                <a href="https://wa.me/923101107147" target="_blank" class="proj-btn">
+                  <i class="fas fa-comments"></i> Order Similar
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="proj-tag">Business</span>
+            <h4>Agency Website</h4>
+          </div>
+        </div>
+
+        <div class="portfolio-card" id="proj-3">
+          <div class="portfolio-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop"
+              alt="Developer Portfolio Project"
+              loading="lazy"
+            />
+            <div class="portfolio-overlay">
+              <div class="overlay-content">
+                <span class="proj-type">Portfolio</span>
+                <h3>Dev Portfolio</h3>
+                <p>Clean, animated personal portfolio with dark theme design.</p>
+                <a href="https://wa.me/923101107147" target="_blank" class="proj-btn">
+                  <i class="fas fa-comments"></i> Order Similar
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="proj-tag">Portfolio</span>
+            <h4>Personal Portfolio</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ PRICING ══════════════════ -->
+  <section id="pricing" class="pricing section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Affordable Plans</p>
+        <h2 class="section-title">Simple <span class="gradient-text">Pricing</span></h2>
+        <p class="section-desc">Transparent pricing with no hidden fees. Choose the plan that fits you.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <!-- Basic -->
+        <div class="pricing-card" id="plan-basic">
+          <div class="plan-name">Basic</div>
+          <div class="plan-price">
+            <span class="currency">$</span>20
+          </div>
+          <div class="plan-tagline">Perfect for starters</div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> 1 Page Website</li>
+            <li><i class="fas fa-check"></i> Clean Modern Design</li>
+            <li><i class="fas fa-check"></i> Mobile Responsive</li>
+            <li><i class="fas fa-check"></i> Basic SEO Setup</li>
+            <li><i class="fas fa-check"></i> Fast Delivery</li>
+            <li class="disabled"><i class="fas fa-times"></i> Multiple Pages</li>
+            <li class="disabled"><i class="fas fa-times"></i> Premium Animations</li>
+          </ul>
+          <a href="https://wa.me/923101107147" target="_blank" class="btn btn-ghost-plan" id="order-basic">
+            <i class="fab fa-whatsapp"></i> Order Now
+          </a>
+        </div>
+
+        <!-- Standard -->
+        <div class="pricing-card popular-card" id="plan-standard">
+          <div class="popular-badge">⭐ Most Popular</div>
+          <div class="plan-name">Standard</div>
+          <div class="plan-price">
+            <span class="currency">$</span>60
+          </div>
+          <div class="plan-tagline">Best value for most clients</div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> 3–5 Pages Website</li>
+            <li><i class="fas fa-check"></i> Premium Modern Design</li>
+            <li><i class="fas fa-check"></i> Fully Responsive</li>
+            <li><i class="fas fa-check"></i> Full SEO Optimization</li>
+            <li><i class="fas fa-check"></i> Contact Integration</li>
+            <li><i class="fas fa-check"></i> Social Media Links</li>
+            <li class="disabled"><i class="fas fa-times"></i> Custom Animations</li>
+          </ul>
+          <a href="https://wa.me/923101107147" target="_blank" class="btn btn-primary" id="order-standard">
+            <i class="fab fa-whatsapp"></i> Order Now
+          </a>
+        </div>
+
+        <!-- Platinum -->
+        <div class="pricing-card" id="plan-platinum">
+          <div class="plan-name">Platinum</div>
+          <div class="plan-price">
+            <span class="currency">$</span>100
+          </div>
+          <div class="plan-tagline">Full custom premium website</div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Unlimited Pages</li>
+            <li><i class="fas fa-check"></i> 100% Custom Design</li>
+            <li><i class="fas fa-check"></i> Advanced Animations</li>
+            <li><i class="fas fa-check"></i> Full SEO + Speed Opt.</li>
+            <li><i class="fas fa-check"></i> CMS / Admin Panel</li>
+            <li><i class="fas fa-check"></i> Priority Support</li>
+            <li><i class="fas fa-check"></i> Free Revisions</li>
+          </ul>
+          <a href="https://wa.me/923101107147" target="_blank" class="btn btn-ghost-plan" id="order-platinum">
+            <i class="fab fa-whatsapp"></i> Order Now
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ CONTACT ══════════════════ -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Let's Talk</p>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-desc">Ready to start your project? Reach out — I respond fast!</p>
+      </div>
+      <div class="contact-box">
+        <div class="contact-intro">
+          <div class="contact-avatar">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="contact-text">
+            <h3>Mudasir Hussain</h3>
+            <p>Professional Web Developer</p>
+            <div class="contact-status">
+              <span class="online-dot"></span> Online &amp; Available
+            </div>
+          </div>
+        </div>
+        <p class="contact-msg">
+          Have a project in mind? Let's build something amazing together. <br />
+          Message me on <strong>WhatsApp</strong> or <strong>Instagram</strong> — I'll get back to you within minutes!
+        </p>
+        <div class="contact-buttons">
+          <a href="https://wa.me/923101107147" target="_blank" class="contact-btn whatsapp-btn" id="contact-whatsapp">
+            <div class="cbtn-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="cbtn-text">
+              <span class="cbtn-label">Chat on</span>
+              <span class="cbtn-platform">WhatsApp</span>
+            </div>
+            <div class="cbtn-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+          <a href="https://www.instagram.com/toonixie1?igsh=MjExeGJieWN0enFs" target="_blank" class="contact-btn instagram-btn" id="contact-instagram">
+            <div class="cbtn-icon">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="cbtn-text">
+              <span class="cbtn-label">Follow on</span>
+              <span class="cbtn-platform">Instagram</span>
+            </div>
+            <div class="cbtn-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="logo">
+          <span class="logo-bracket">&lt;</span>Dev<span class="logo-accent">/</span><span class="logo-bracket">&gt;</span>
+        </a>
+        <p class="footer-copy">&copy; 2026 Mudasir Hussain. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/923101107147" target="_blank" aria-label="WhatsApp" class="social-icon whatsapp-social">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/toonixie1?igsh=MjExeGJieWN0enFs" target="_blank" aria-label="Instagram" class="social-icon instagram-social">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
